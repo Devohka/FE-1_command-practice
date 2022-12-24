@@ -2,12 +2,13 @@
 
 body {
     font-family: 'Montserrat';
+    position: relative;
 }
 
 .container {
     width: 1140px;
     padding: 0px 15px ;
-    outline: solid red 5px ;
+    // outline: solid red 5px ;
     margin-right: auto;
     margin-left: auto;
 }

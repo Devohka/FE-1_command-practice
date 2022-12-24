@@ -1,13 +1,37 @@
 .header {
     background-color: black;
+   
+    border-bottom: 1px solid rgba(161, 161, 161, 0.5)  ;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
+
+.header-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+// .header-list__item:not(:last-child) {
+//     // margin-right: 39px;
+// }
 
 
 .header__link {
-
+display: block;
 font-weight: 500;
 font-size: 16px;
 line-height: calc(20 / 16);
 color: $secondary-color;
+padding: 40px 0px;
+
 }
+
+.header__link:first-child {
+    padding-left: 20px;
+    padding-right:20px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
 

@@ -20,23 +20,45 @@ img {
 
 body {
   font-family: "Montserrat";
+  position: relative;
 }
 
 .container {
   width: 1140px;
   padding: 0px 15px;
-  outline: solid red 5px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .header {
   background-color: black;
+  border-bottom: 1px solid rgba(161, 161, 161, 0.5);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header__link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   color: #FFFFFF;
+  padding: 40px 0px;
+}
+
+.header__link:first-child {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 2px solid #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
