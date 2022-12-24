@@ -12,3 +12,17 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
+.button {
+    background: $accent-color;
+box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+border-radius: 30px;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+border: none;
+color: $secondary-color;
+padding: 15px 36px 15px 36px;
+
+}
