@@ -20,6 +20,22 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.services__list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.services__item{
+    display: flex;
+    width: 353px;
+}
+
+.services__content{
+    padding-top: 46px;
 }
 
 .services__name{
@@ -36,5 +52,33 @@
     line-height: 1.57;
     // width: 222px;
     color: $primary-text-color;
+}
+
+.services__svg{
+    width: 40px;
+    height: 40px;
+    fill: $accent-color;
+}
+
+.circle-out{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 17px;
+}
+
+.circle-in{
+    width: 90px;
+    height: 90px;
+    border: 1px solid $accent-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
