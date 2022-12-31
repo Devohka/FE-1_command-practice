@@ -1,0 +1,40 @@
+.services{
+    padding-top: 110px;
+    padding-bottom: 105px;
+}
+
+.services__title{
+    @include title($text-position: center, $title: $title-color);
+    margin-bottom: 32px;
+    width: 739px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: $primary-text-color;
+    width: 730px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services__name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $mini-title;
+    margin-bottom: 12px;
+}
+
+.services__info{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    // width: 222px;
+    color: $primary-text-color;
+}
+

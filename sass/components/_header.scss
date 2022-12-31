@@ -19,19 +19,27 @@
 
 
 .header__link {
-display: block;
-font-weight: 500;
-font-size: 16px;
-line-height: calc(20 / 16);
-color: $secondary-color;
-padding: 40px 0px;
-
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: $secondary-color;
+    padding: 40px 20px;
 }
 
-.header__link:first-child {
-    padding-left: 20px;
-    padding-right:20px;
-    border-bottom: 2px solid #FFFFFF;
+.header__active-page{
+    position: relative;
+}
+
+.header__active-page::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: $secondary-color;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100px;
 }
 
 
