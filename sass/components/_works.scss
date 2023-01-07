@@ -1,0 +1,10 @@
+.works{
+   padding-top: 100px;
+   padding-bottom: 85px;
+}
+
+
+
+.works__title{
+    @include title($text-position: left, $title: $secondary-color);
+}

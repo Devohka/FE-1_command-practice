@@ -72,6 +72,13 @@
     margin-right: 17px;
 }
 
+.services__button{
+    @extend %button;
+    display: block;
+    margin: 55px auto 0px;
+
+}
+
 .circle-in{
     width: 90px;
     height: 90px;

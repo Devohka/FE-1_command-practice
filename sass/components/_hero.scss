@@ -24,3 +24,8 @@ color: $secondary-color;
 // margin-right: auto;
 margin: 20px auto 50px;
 }
+
+.hero__button{
+    @extend %button;
+}
+    
