@@ -1,10 +1,28 @@
+.container{
+
+}
+
 .works{
    padding-top: 100px;
    padding-bottom: 85px;
+   background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+   
 }
 
-
+.works__conteiner{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom:70px;
+    align-items: center;
+}
 
 .works__title{
     @include title($text-position: left, $title: $secondary-color);
+    width: 540px;
+   
+}
+
+.works__button{
+ @extend %button ;
+
 }
