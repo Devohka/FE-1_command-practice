@@ -12,10 +12,7 @@
 }
 
 .services__text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
-    color: $primary-text-color;
+    @extend %text;
     width: 730px;
     text-align: center;
     margin-left: auto;
@@ -39,10 +36,7 @@
 }
 
 .services__name{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.22;
-    color: $mini-title;
+    @extend %sub-title;
     margin-bottom: 12px;
 }
 

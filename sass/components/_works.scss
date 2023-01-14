@@ -1,12 +1,7 @@
-.container{
-
-}
-
 .works{
    padding-top: 100px;
    padding-bottom: 85px;
-   background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
-   
+   background: linear-gradient(to bottom , #504DC2 50%, #5F12D0, $secondary-color 50%);
 }
 
 .works__conteiner{
@@ -25,4 +20,36 @@
 .works__button{
  @extend %button ;
 
+}
+
+.works__list {
+    @include grid();
+    padding-bottom: 85px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.works__item {
+    @include grid-item();
+}
+
+.works__photo {
+   
+}
+
+.works__name {
+    @extend %sub-title;
+    margin: 30px 0px;
+}
+
+.works__number {
+    color: $accent-color;
+}
+
+.works__text {
+    margin-bottom: 47px;
+    @extend %text;
+}
+
+.work__link {
+    @extend %links;
 }

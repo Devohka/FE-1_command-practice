@@ -1,9 +1,21 @@
 @mixin title($text-position, $title) {
   font-weight: 700;
   font-size: 36px;
-  line-height: 53px;
+  line-height: 1.47;
   text-align: $text-position;
   color: $title;
 }
 
+@mixin grid() {
+    display: flex;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+@mixin grid-item() {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
