@@ -14,8 +14,8 @@
     flex-wrap: wrap;
 }
 
-@mixin grid-item() {
-    flex-basis: calc((100% - 90px) / 3);
+@mixin grid-item($items) {
+    flex-basis: calc((100% - (30px*$items)) / $items);
     margin-right: 30px;
     margin-bottom: 30px;
 }

@@ -29,7 +29,7 @@
 }
 
 .works__item {
-    @include grid-item();
+    @include grid-item($items: 3);
 }
 
 .works__photo {
