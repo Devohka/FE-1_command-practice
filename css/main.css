@@ -21,7 +21,7 @@
   color: #999999;
 }
 
-.feedback-section__title, .works__name, .services__name {
+.footer__title, .feedback-section__title, .works__name, .services__name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
@@ -560,4 +560,38 @@ body {
   font-size: 13px;
   line-height: 1.62;
   color: #999999;
+}
+
+footer svg {
+  width: 10px;
+  height: 10px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+address {
+  display: inline;
+}
+
+.footer__contact svg {
+  width: 15px;
+  height: 15px;
+}
+
+.footer__list-item {
+  -ms-flex-preferred-size: calc((100% - 120px) / 4);
+      flex-basis: calc((100% - 120px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

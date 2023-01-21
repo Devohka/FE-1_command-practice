@@ -1,0 +1,20 @@
+footer svg{
+    width: 10px;
+    height: 10px;
+}
+.footer__list {
+    @include grid();
+}
+address {
+    display: inline;
+}
+.footer__title {
+    @extend %sub-title;
+}
+.footer__contact svg{
+    width: 15px;
+    height: 15px;
+}
+.footer__list-item {
+    @include grid-item($items:4);
+}
