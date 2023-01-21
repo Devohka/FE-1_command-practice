@@ -14,7 +14,7 @@
   padding: 15px 36px 15px 36px;
 }
 
-.project-section__text, .works__text, .standarts__description, .standarts__text, .services__text {
+.video-section__text, .project-section__text, .works__text, .standarts__description, .standarts__text, .services__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.56;
@@ -438,4 +438,65 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-top: 50px;
+}
+
+.video-section {
+  background-image: url(../img/video\ section.jpg);
+  padding-top: 70px;
+  padding-bottom: 85px;
+  background-repeat: no-repeat;
+}
+
+.video-section__content {
+  background-image: url(../img/video.png);
+  padding: 165px 335px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video-section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.47;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.video-section__text {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.video-section__svg {
+  width: 60px;
+  height: 60px;
+  background-color: #4985FF;
+  fill: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 21px;
+}
+
+.video-section__button {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: transparent;
+  width: 300px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 200px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.56;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
