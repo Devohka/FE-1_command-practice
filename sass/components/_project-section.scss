@@ -9,6 +9,8 @@
      
 }
 
+
+
 .project-section__text{
     @extend %text;
     margin-top: 28px;
@@ -25,6 +27,11 @@
 
 .project-section__item{
     @include grid-item($items: 4);
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+
+    &:hover {
+        transform: scale(1.05)
+    }
 }
 
 .project-section__button{

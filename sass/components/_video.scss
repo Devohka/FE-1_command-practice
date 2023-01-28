@@ -10,6 +10,20 @@
   padding: 165px 335px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms,
+  border-color  1s cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:hover .video-section__button {
+    border-color: $accent-color;
+    
+    
+  }
+    
+  
 }
 
 .video-section__title {

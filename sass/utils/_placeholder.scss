@@ -11,6 +11,22 @@
     border: none;
     color: $secondary-color;
     padding: 15px 36px 15px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms,
+    background-color 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms,
+    color 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms, 
+    box-shadow 0.5s cubic-bezier(0.19, 1, 0.22, 1) 200ms  ;
+
+   
+    &:hover {
+        background-color:transparent;
+        color: $accent-color; 
+        box-shadow: 0px 0px 10px $accent-color;
+        
+        transform: scale(1.12);
+    }
 }
 
 %text {

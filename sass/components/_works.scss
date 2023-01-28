@@ -30,11 +30,24 @@
 
 .works__item {
     @include grid-item($items: 3);
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms,
+    color  1s cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+    
+    &:hover .works__photo {
+        transform: scale(1.07) ;
+    }
+
+    &:hover .works__number {
+    color: $mini-title;
+    }
+
+    &:hover .works__name {
+        color: $accent-color;
+    }
+
 }
 
-.works__photo {
-   
-}
+
 
 .works__name {
     @extend %sub-title;

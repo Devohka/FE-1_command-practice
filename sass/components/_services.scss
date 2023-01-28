@@ -29,7 +29,22 @@
 .services__item{
     display: flex;
     width: 353px;
+    &:hover .circle-in {
+        border-color: $primary-text-color;
+    }
+    &:hover .circle-out {
+        border-color: $accent-color;
+        transform: scale(1.05);
+    }
+
+    &:hover .services__svg {
+      fill: $primary-text-color;
+    }
+
+
+
 }
+
 
 .services__content{
     padding-top: 46px;
@@ -82,4 +97,12 @@
     align-items: center;
     justify-content: center;
 }
+
+// animations
+
+.services__title-top {
+    animation: to-bottom 1s cubic-bezier(0.23, 1, 0.320, 1) 2s both;
+}
+
+
 
