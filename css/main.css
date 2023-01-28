@@ -35,7 +35,7 @@
           transform: scale(1.12);
 }
 
-.feedback-section__subtitle, .video-section__text, .project-section__text, .works__text, .standarts__description, .standarts__text, .services__text {
+.pages__text, .feedback-section__subtitle, .video-section__text, .project-section__text, .works__text, .standarts__description, .standarts__text, .services__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.56;
@@ -228,8 +228,8 @@ body {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../../img/hero.jpg);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../img/hero.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../img/hero.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/hero.jpg);
   padding-top: 220px;
   padding-bottom: 335px;
   text-align: center;
@@ -759,11 +759,11 @@ body {
   color: #999999;
 }
 
-footer svg {
-  width: 10px;
-  height: 10px;
+.footer {
+  background-color: #F6F6F8;
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
-
 .footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,20 +775,47 @@ footer svg {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 70px;
 }
-
-address {
-  display: inline;
+.footer__title {
+  margin-bottom: 35px;
 }
-
-.footer__contact svg {
-  width: 15px;
-  height: 15px;
-}
-
-.footer__list-item {
+.footer__item {
   -ms-flex-preferred-size: calc((100% - 120px) / 4);
       flex-basis: calc((100% - 120px) / 4);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.footer__direct-by {
+  color: #999999;
+  border-top: 2px solid #E0E0E0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+address {
+  font-style: normal;
+}
+
+.pages__icon {
+  fill: #999999;
+  margin-right: 15px;
+}
+.pages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pages__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.pages__item:hover .pages__icon {
+  fill: #4985FF;
+}
+.pages__item:hover .pages__text {
+  color: #4985FF;
 }/*# sourceMappingURL=main.css.map */
