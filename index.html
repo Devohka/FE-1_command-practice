@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Templates</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,10 +20,10 @@
       referrerpolicy="no-referrer"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link rel="stylesheet" href="css/wickedcss.min.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/wickedcss.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
@@ -57,7 +58,9 @@
         <h1 class="hero__title hero__title-right">
           Ми створюємо легкі рішення важких задач і проблем
         </h1>
-        <button class="hero__button hero__button-bottom" type="button">Наші проекти</button>
+        <button class="hero__button hero__button-bottom" type="button">
+          Наші проекти
+        </button>
       </section>
 
       <section class="services">
@@ -65,14 +68,22 @@
           <h2 class="services__title services__title-top">
             Ми створюємо мобільні додатки для великих корпорацій
           </h2>
-          <p class="services__text">
+          <p
+            data-aos-duration="700"
+            data-aos="zoom-in-down"
+            class="services__text aos-init aos-animate"
+          >
             Lorem Ipsum - це текст-"риба", що часто використовується в пресі та
             веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
             латиниці з початку XVI ст.
           </p>
 
           <ul class="services__list">
-            <li class="services__item">
+            <li
+              data-aos-duration="900"
+              data-aos="zoom-in-right"
+              class="services__item aos-init aos-animat"
+            >
               <div class="circle-out">
                 <div class="circle-in">
                   <svg class="services__svg">
@@ -104,7 +115,11 @@
                 </p>
               </div>
             </li>
-            <li class="services__item">
+            <li
+              data-aos-duration="900"
+              data-aos="zoom-in-left"
+              class="services__item aos-init aos-animat"
+            >
               <div class="circle-out">
                 <div class="circle-in">
                   <svg class="services__svg">
@@ -129,7 +144,13 @@
         <div class="container">
           <div class="standarts__block">
             <div class="standarts__content">
-              <h2 class="standarts__title">Високі стандарти розробки</h2>
+              <h2
+                data-aos-duration="900"
+                data-aos="zoom-in-left"
+                class="standarts__title aos-init aos-animat"
+              >
+                Високі стандарти розробки
+              </h2>
               <p class="standarts__text">
                 Lorem Ipsum - це текст-"риба", що часто використовується в пресі
                 та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
@@ -138,7 +159,9 @@
               <a class="standarts__link" href="#">Детальніше про компанію</a>
             </div>
             <img
-              class="standarts__pages "
+              data-aos-duration="900"
+              data-aos="zoom-in-left"
+              class="standarts__pages aos-init aos-animat"
               src="./img/standarts.png"
               alt="стандарт"
             />
@@ -204,7 +227,13 @@
       <section class="works">
         <div class="container">
           <div class="works__conteiner">
-            <h2 class="works__title">Наші роботи на яких ми спеціалізуємось</h2>
+            <h2
+              data-aos-duration="900"
+              data-aos="zoom-in-left"
+              class="works__title aos-init aos-animat"
+            >
+              Наші роботи на яких ми спеціалізуємось
+            </h2>
 
             <button class="works__button" type="button">Всі послуги</button>
           </div>
@@ -264,7 +293,13 @@
       <!-- Секція проекти -->
       <section class="project-section">
         <div class="container">
-          <h2 class="project-section__title">Наші проекти</h2>
+          <h2
+            data-aos-duration="700"
+            data-aos="zoom-in-down"
+            class="project-section__title aos-init aos-animat"
+          >
+            Наші проекти
+          </h2>
           <p class="project-section__text">
             Lorem Ipsum - це текст-"риба", що часто використовується є в пресі
             та веб-дизайні. Lorem Ipsum є стандартною "рибою" для текстів на
@@ -307,9 +342,21 @@
       </section>
       <section class="video-section">
         <div class="container">
-          <h2 class="video-section__title">Відео про нашу роботу</h2>
-          <p class="video-section__text">Просто подивіться, як ми працюємо</p>
-          <div class="video-section__content ">
+          <h2
+            data-aos-duration="700"
+            data-aos="zoom-in-down"
+            class="video-section__title aos-init aos-animat"
+          >
+            Відео про нашу роботу
+          </h2>
+          <p
+            data-aos-duration="700"
+            data-aos="zoom-in-down"
+            class="video-section__text aos-init aos-animat"
+          >
+            Просто подивіться, як ми працюємо
+          </p>
+          <div class="video-section__content">
             <button type="button" class="video-section__button">
               <svg class="video-section__svg">
                 <use href="./img/symbol-defs.svg#icon-video-svg"></use>
@@ -330,13 +377,29 @@
       </section>
       <section class="feedback-section">
         <div class="container">
-          <h2 class="feedback-section__title">Підпишіться на нашу розсилку</h2>
-          <h3 class="feedback-section__subtitle">Корисні статті, акції, новини - отримайте все це зараз!</h3>
+          <h2
+            data-aos-duration="700"
+            data-aos="zoom-in-down"
+            class="feedback-section__title aos-init aos-animat"
+          >
+            Підпишіться на нашу розсилку
+          </h2>
+          <h3
+            data-aos-duration="700"
+            data-aos="zoom-in-down"
+            class="feedback-section__subtitle os-init aos-animat"
+          >
+            Корисні статті, акції, новини - отримайте все це зараз!
+          </h3>
           <form class="feedback-section__form">
-            <input class="feedback-section__input" placeholder="Ваш e-mail">
-            <button class="feedback-section__button" type="submit">Підписатися</button>
+            <input class="feedback-section__input" placeholder="Ваш e-mail" />
+            <button class="feedback-section__button" type="submit">
+              Підписатися
+            </button>
           </form>
-          <p class="feedback-section__text">Ми не шлем спам, і не передаємо нікому ваші дані</p>
+          <p class="feedback-section__text">
+            Ми не шлем спам, і не передаємо нікому ваші дані
+          </p>
         </div>
       </section>
     </main>
@@ -349,169 +412,111 @@
             <ul class="pages">
               <li class="pages__item">
                 <svg class="pages__icon" width="15" height="12">
-                  <use href="./img/symbol-defs.svg#icon-mail">
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-mail"></use>
                 </svg>
-                <span class="pages__text">
-                  test@test.ua
-                </span>
-              </li>
-              <li class="pages__item">
-                 <svg class="pages__icon" width="15" height="15">
-                  <use href="./img/symbol-defs.svg#icon-footer-phone"> 
-                  </use>
-                </svg>
-                <span class="pages__text">
-                  +3 8096 555 66 99
-                </span>
+                <span class="pages__text"> test@test.ua </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="15" height="15">
-                  <use href="./img/symbol-defs.svg#icon-footer-location">
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-phone"></use>
+                </svg>
+                <span class="pages__text"> +3 8096 555 66 99 </span>
+              </li>
+              <li class="pages__item">
+                <svg class="pages__icon" width="15" height="15">
+                  <use href="./img/symbol-defs.svg#icon-footer-location"></use>
                 </svg>
                 <address class="pages__text">Тернопіль вул С. Бандери</address>
               </li>
             </ul>
           </li>
 
-
           <li class="footer__item">
             <p class="footer__title">Основні посилання</p>
             <ul class="pages">
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Головна
-                </span>
+                <span class="pages__text"> Головна </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Наші проекти
-                </span>
+                <span class="pages__text"> Наші проекти </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Наші послуги
-                </span>
+                <span class="pages__text"> Наші послуги </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Контакти
-                </span>
+                <span class="pages__text"> Контакти </span>
               </li>
             </ul>
           </li>
-
 
           <li class="footer__item">
             <p class="footer__title">Наші проекти</p>
             <ul class="pages">
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Укрпошта
-                </span>
+                <span class="pages__text"> Укрпошта </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Нафтогаз
-                </span>
+                <span class="pages__text"> Нафтогаз </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Львівська пивоварня
-                </span>
+                <span class="pages__text"> Львівська пивоварня </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  ТЭЦ Калуша
-                </span>
+                <span class="pages__text"> ТЭЦ Калуша </span>
               </li>
             </ul>
           </li>
-
 
           <li class="footer__item">
             <p class="footer__title">Соціальні мережі</p>
             <ul class="pages">
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  LinkedIn
-                </span>
+                <span class="pages__text"> LinkedIn </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-        
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Instagram
-                </span>
+                <span class="pages__text"> Instagram </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Facebook
-                </span>
+                <span class="pages__text"> Facebook </span>
               </li>
               <li class="pages__item">
                 <svg class="pages__icon" width="6" height="9">
-                  <use href="./img/symbol-defs.svg#icon-footer-arrow">
-                    
-                  </use>
+                  <use href="./img/symbol-defs.svg#icon-footer-arrow"></use>
                 </svg>
-                <span class="pages__text">
-                  Twitter
-                </span>
+                <span class="pages__text"> Twitter </span>
               </li>
             </ul>
           </li>
@@ -520,6 +525,9 @@
         <p class="footer__direct-by">&#169; 2023. Всі права захищені</p>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
