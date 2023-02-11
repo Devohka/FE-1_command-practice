@@ -74,7 +74,7 @@ h1, h2, h3, p {
 img {
   display: block;
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 html {
@@ -89,6 +89,7 @@ body {
 
 .container {
   padding: 0px 15px;
+  position: relative;
   margin-right: auto;
   margin-left: auto;
 }
@@ -444,8 +445,13 @@ body {
 }
 
 .standarts {
-  padding: 100px 0px 70px;
+  padding: 50px 0px 50px;
   background-color: #F6F6F8;
+}
+@media screen and (min-width: 1140px) {
+  .standarts {
+    padding: 100px 0px 70px;
+  }
 }
 
 .standarts__title {
@@ -480,6 +486,7 @@ body {
   transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms;
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms;
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+  display: block;
 }
 .standarts__pages:hover {
   -webkit-transform: scale(1.1);
@@ -494,6 +501,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -509,14 +518,18 @@ body {
 }
 
 .standarts__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-
+@media screen and (min-width: 768px) {
+  .standarts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .standarts__list svg {
   width: 30px;
   height: 30px;

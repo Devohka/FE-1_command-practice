@@ -1,6 +1,14 @@
 .standarts {
-    padding: 100px 0px 70px;
+    padding: 50px 0px 50px;
     background-color: #F6F6F8;
+
+    @media screen and (min-width: 768px) {
+        
+    }
+
+    @media screen and (min-width: 1140px) {
+        padding: 100px 0px 70px;
+    }
 }
 .standarts__title{
     @include title($text-position: left, $title: $mini-title);
@@ -12,9 +20,10 @@
 }
 .standarts__pages{
     width: 500px;
-height: 400px;
-box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
-transition:transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms ;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    transition:transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms ;
+    display: block;
 &:hover {
     transform: scale(1.1);
 }
@@ -24,6 +33,7 @@ transition:transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms ;
 }
 .standarts__block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -36,8 +46,16 @@ transition:transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms ;
     margin-bottom: 70px;
 }
 .standarts__list {
-    display: flex;
+    display: none;
     justify-content: space-evenly;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1140px) {
+        
+    }
 }
 .standarts__list svg {
     width: 30px;
