@@ -1,9 +1,17 @@
 @mixin title($text-position, $title) {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.47;
   text-align: $text-position;
   color: $title;
+  
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+}
+
+@media screen and (min-width: 1140px) {
+    font-size: 36px;
+}
 }
 
 @mixin grid() {

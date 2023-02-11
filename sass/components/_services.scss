@@ -6,29 +6,46 @@
 .services__title{
     @include title($text-position: center, $title: $title-color);
     margin-bottom: 32px;
-    width: 739px;
+    
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 650px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        width: 739px;
+    }
 }
 
 .services__text{
     @extend %text;
-    width: 730px;
+    width: 310px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        width: 650px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        width: 730px;
+    }
 }
 
 .services__list{
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .services__item{
     display: flex;
-    width: 353px;
+    width: 350px;
     &:hover .circle-in {
         border-color: $primary-text-color;
     }
