@@ -5,16 +5,27 @@
 }
 
 .works__conteiner{
-    display: flex;
     justify-content:space-between;
     margin-bottom:70px;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1140px) {
+        
+    }
 }
 
 .works__title{
     @include title($text-position: left, $title: $secondary-color);
-    width: 540px;
-   
+    @media screen and (min-width: 768px) {
+        max-width: 500px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        
+    }
 }
 
 .works__button{
