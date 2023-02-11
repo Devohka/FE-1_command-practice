@@ -3,11 +3,22 @@
   padding-top: 70px;
   padding-bottom: 85px;
   background-repeat: no-repeat;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+}
+
+@media screen and (min-width: 1140px) {
+   
+}
 }
 
 .video-section__content {
   background-image: url(../img/video.png);
-  padding: 165px 335px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 430px;
   background-repeat: no-repeat;
   background-position: center;
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms,

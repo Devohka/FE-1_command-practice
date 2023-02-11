@@ -720,11 +720,25 @@ body {
   padding-top: 70px;
   padding-bottom: 85px;
   background-repeat: no-repeat;
+  display: none;
 }
-
+@media screen and (min-width: 768px) {
+  .video-section {
+    display: block;
+  }
+}
 .video-section__content {
   background-image: url(../img/video.png);
-  padding: 165px 335px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 430px;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transition: border-color 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1) 200ms;
