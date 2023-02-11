@@ -1,8 +1,13 @@
 .hero {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../img/hero.jpg);
+    padding-bottom: 200px;
+    padding-top: 100px;
+    text-align: center;
+    background-repeat: no-repeat;
+@media screen and (min-width: 1140px) {
     padding-top: 220px;
     padding-bottom: 335px;
-   text-align: center;
+}
 }
 
 .hero__text {
@@ -15,16 +20,25 @@ line-height: 1.25;
 
 
 .hero__title {
-    max-width: 829px;
     font-weight: 800;
-font-size: 48px;
-line-height: 1.33;
-color: $secondary-color;
-// margin-top: 20px;
-// margin-bottom: 50px;
-// margin-left: auto;
-// margin-right: auto;
-margin: 20px auto 50px;
+    font-size: 30px;
+    line-height: 1.33;
+    color: $secondary-color;
+    // margin-top: 20px;
+    // margin-bottom: 50px;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 20px auto 50px;
+
+@media screen and (min-width: 768px) {
+    font-size: 36px;
+    max-width: 650px;
+}
+
+@media screen and (min-width: 1140px) {
+    font-size: 48px;
+    max-width: 829px;
+}
 }
 
 .hero__button{
