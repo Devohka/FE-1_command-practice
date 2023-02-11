@@ -25,13 +25,19 @@
     />
     <link rel="stylesheet" href="css/wickedcss.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
     <!-- HEADER    -->
-    <!-- <header class="header" id="button-scroll">
+    <header class="header" id="button-scroll">
       <div class="container">
-        <nav class="animate__heartBeat">
+        <nav class="animate__heartBeat header_navigation">
           <ul class="header-list">
             <li class="header-list__item header__active-page">
               <a href="" class="header__link">Головна</a>
@@ -50,8 +56,65 @@
             </li>
           </ul>
         </nav>
+        <!-- Button trigger modal -->
+        <div class="header_btn">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Меню
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  IT-Студія
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <nav class="mobile_navigation">
+                  <ul class="mobile-list">
+                    <li class="mobile-list__item mobile__active-page">
+                      <a href="" class="mobile__link">Головна</a>
+                    </li>
+                    <li class="mobile-list__item">
+                      <a href="#projects" class="mobile__link">Наші проекти</a>
+                    </li>
+                    <li class="mobile-list__item">
+                      <a href="#services" class="mobile__link">Послуги</a>
+                    </li>
+                    <li class="mobile-list__item">
+                      <a href="#video" class="mobile__link">Новини</a>
+                    </li>
+                    <li class="mobile-list__item">
+                      <a href="#contact" class="mobile__link">Контакти</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero">
         <p class="hero__text hero__text-up">Передова IT студія</p>
@@ -341,8 +404,7 @@
         </div>
       </section>
 
-                                          <!-- video-section -->
-
+      <!-- video-section -->
 
       <section class="video-section" id="video">
         <div class="container">
@@ -370,9 +432,8 @@
           </div>
         </div>
       </section>
-                                                <!-- feedback-section -->
-      
-      
+      <!-- feedback-section -->
+
       <section class="feedback-section">
         <div class="container">
           <h2
@@ -528,5 +589,15 @@
     <script>
       AOS.init();
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

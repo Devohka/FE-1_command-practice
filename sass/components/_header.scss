@@ -25,6 +25,7 @@
     line-height: calc(20 / 16);
     color: $secondary-color;
     padding: 40px 20px;
+    text-decoration: none;
 }
 
 .header__active-page{
@@ -42,4 +43,21 @@
     top: 100px;
 }
 
+.header_navigation {
+    display: none;
+    @media screen and (min-width: 600px) {
+        display: block;
+    }
+}
+.header_btn {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
 
+}
+.btn-primary {
+    background-color: $accent-color;
+}

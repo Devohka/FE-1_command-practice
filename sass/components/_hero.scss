@@ -4,6 +4,9 @@
     padding-top: 100px;
     text-align: center;
     background-repeat: no-repeat;
+    @media screen and (min-width:600px) {
+        padding-top: 150px;
+    }
 @media screen and (min-width: 1140px) {
     padding-top: 220px;
     padding-bottom: 335px;
