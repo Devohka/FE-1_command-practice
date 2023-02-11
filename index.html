@@ -29,7 +29,7 @@
 
   <body>
     <!-- HEADER    -->
-    <header class="header">
+    <header class="header" id="button-scroll">
       <div class="container">
         <nav class="animate__heartBeat">
           <ul class="header-list">
@@ -37,16 +37,16 @@
               <a href="" class="header__link">Головна</a>
             </li>
             <li class="header-list__item">
-              <a href="" class="header__link">Наші проекти</a>
+              <a href="#projects" class="header__link">Наші проекти</a>
             </li>
             <li class="header-list__item">
-              <a href="" class="header__link">Послуги</a>
+              <a href="#services" class="header__link">Послуги</a>
             </li>
             <li class="header-list__item">
-              <a href="" class="header__link">Новини</a>
+              <a href="#video" class="header__link">Новини</a>
             </li>
             <li class="header-list__item">
-              <a href="" class="header__link">Контакти</a>
+              <a href="#contact" class="header__link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +63,7 @@
         </button>
       </section>
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <h2 class="services__title services__title-top">
             Ми створюємо мобільні додатки для великих корпорацій
@@ -291,7 +291,7 @@
         </div>
       </section>
       <!-- Секція проекти -->
-      <section class="project-section">
+      <section class="project-section" id="projects">
         <div class="container">
           <h2
             data-aos-duration="700"
@@ -340,7 +340,7 @@
           </button>
         </div>
       </section>
-      <section class="video-section">
+      <section class="video-section" id="video">
         <div class="container">
           <h2
             data-aos-duration="700"
@@ -404,7 +404,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
@@ -525,6 +525,7 @@
         <p class="footer__direct-by">&#169; 2023. Всі права захищені</p>
       </div>
     </footer>
+    <a href="#button-scroll" class="button-scroll">&#8657;</a>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

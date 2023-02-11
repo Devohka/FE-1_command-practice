@@ -53,8 +53,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #4985FF;
 }
 
@@ -76,6 +75,11 @@ img {
   display: block;
   height: auto;
   width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -818,4 +822,25 @@ address {
 }
 .pages__item:hover .pages__text {
   color: #4985FF;
+}
+
+.button-scroll {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  color: blue;
+  background-color: rgba(135, 206, 235, 0.5);
+  border: none;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=main.css.map */
